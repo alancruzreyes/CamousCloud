@@ -1,0 +1,39 @@
+MongoDB
+- show dbs
+- use campuscloud
+- show collections
+- db.servicios_detalles.find()
+- db.servicios_detalles.find({})
+- db.servicios_detalles.insertOne()
+- db.servicios_detalles.insertMany()
+- db.servicios_detalles.updateOne()
+- db.servicios_detalles.deleteOne()
+- db.servicios_detalles.aggregate()
+- db.servicios_detalles.countDocuments({})
+Neo4j
+- CREATE
+- MERGE
+- MATCH
+- WHERE
+- RETURN
+- SET
+- DELETE
+- DETACH DELETE
+- MATCH (e:Estudiante) RETURN e;
+- MATCH (s:Servicio) RETURN s;
+- MATCH (e:Estudiante)-[:UTILIZA]->(s:Servicio) RETURN e, s;
+- MATCH (e:Estudiante)-[r:UTILIZA]->(s:Servicio) RETURN e, r, s;
+Apache Cassandra
+- DESCRIBE KEYSPACES;
+- USE campuscloud;
+- DESCRIBE TABLES;
+- DESCRIBE TABLE eventos_estudiantes;
+- CREATE KEYSPACE
+- CREATE TABLE
+- INSERT INTO
+- SELECT
+- UPDATE
+- DELETE
+- SELECT * FROM eventos_estudiantes;
+- SELECT * FROM eventos_estudiantes WHERE estudiante_id = 'EST001';
+- SELECT * FROM eventos_estudiantes WHERE estudiante_id = 'EST003';
